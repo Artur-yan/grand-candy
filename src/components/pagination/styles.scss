@@ -1,0 +1,37 @@
+@import '../../assets/styles/variables';
+
+.P-p-btn li {
+
+  button {
+    font-weight: bold;
+  }
+
+  .MuiPaginationItem-page.Mui-selected {
+    color: $ping;
+    font-weight: bold;
+    background: white;
+  }
+
+  &:nth-child(1) {
+    color: red;
+  }
+
+  &:nth-last-child(1) {
+    button {
+      color: $ping;
+      box-shadow: 0px 3px 13px #00000029;
+
+    }
+  }
+
+}
+
+.P-prev-btn li {
+  &:nth-child(1) {
+    button {
+      color: $ping;
+      box-shadow: 0px 3px 13px #00000029;
+
+    }
+  }
+}

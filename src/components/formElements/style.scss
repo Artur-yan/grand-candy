@@ -1,0 +1,475 @@
+@import '../../assets/styles/variables';
+
+input[type=text], input[type=password], input[type=date], span[role=textbox] {
+  padding: 12px 12px 12px 16px;
+  border-radius: 29px;
+  border: none;
+  background: $light-gray;
+  width: 100%;
+}
+
+.P-disabled-input {
+  padding: 10px;
+  border-radius: 23px;
+  border: none;
+  background: $light-gray;
+  color: $gray-3;
+  width: 100%;
+}
+
+button:disabled {
+  background: #e2066d70;
+}
+
+.P-favorites {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  margin-top: 10px;
+  margin-right: 5px;
+
+  .P-icon {
+    font-size: 22px;
+    color: $light-2;
+    cursor: pointer;
+  }
+
+  .P-icon-active {
+    font-size: 25px;
+    color: $ping;
+    cursor: pointer;
+  }
+
+  .P-text {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+textarea {
+  border-radius: 23px;
+  border: none;
+  background: $light-gray;
+  width: 100%;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.P-textarea {
+  height: 100px;
+  padding: 15px 15px;
+}
+
+.P-ri-45 {
+  padding-right: 45px;
+}
+
+//radio
+.P-radio {
+  display: flex;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.P-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 1px solid $gray-2;
+}
+
+.P-radio:hover input ~ .checkmark {
+  background-color: $white;
+}
+
+.P-radio input:checked ~ .checkmark {
+  color: $ping;
+  border: 1px solid $ping;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.P-radio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.P-radio .checkmark:after {
+  top: 4px;
+  left: 4px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: $ping;
+}
+
+.P-input {
+
+  position: relative;
+
+  .icon-ic_eye {
+    cursor: pointer;
+    color: $gray;
+    font-size: 14px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    user-select: none;
+  }
+
+  .P-input-invisible {
+    cursor: pointer;
+    color: $gray;
+    height: 20px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    user-select: none;
+  }
+}
+
+.P-select {
+  cursor: pointer;
+  border-radius: 18px;
+  color: $gray-3;
+  width: 240px;
+
+  @media only screen and (max-width: 750px) {
+    width: 170px;
+  }
+}
+
+.P-select-content {
+  position: absolute;
+  min-width: 160px;
+  top: 47px;
+  width: 100%;
+  background: $white;
+  box-shadow: $shadow;
+  z-index: 1;
+
+  div {
+    padding: 10px 10px;
+  }
+
+  div:hover {
+    background: $light-gray ;
+  }
+}
+
+.P-select-active {
+  background: $light-gray ;
+}
+
+.P-flag {
+  width: 22px;
+  height: 22px;
+  margin-left: 10px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 7px #0000003D;
+
+  @media only screen and (max-width: 750px) {
+    margin-left: 0;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.P-search-select-content {
+  position: absolute;
+  max-width: 135px;
+  top: 47px;
+  background: $white;
+  box-shadow: $shadow;
+  z-index: 1;
+
+  div:hover {
+    background: $light-gray ;
+  }
+}
+
+.P-select span {
+  padding: 10px 10px 10px 11px;
+
+  @media only screen and (max-width: 750px) {
+    padding: 10px 7px;
+  }
+}
+
+.P-to-right {
+  margin-left: auto;
+}
+
+.P-to-left {
+  margin-right: auto;
+}
+
+.P-btn-bg-ping {
+  background: $ping;
+}
+
+.P-btn-bg-green {
+  background: #009e89;
+}
+
+.P-btn-ping {
+  color: $ping;
+  border: 1px solid $ping;
+}
+
+.G-btn-link-ping {
+  color: $ping;
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.G-btn-link-gray {
+  color: gray;
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.P-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 10px 61px;
+  background-image: linear-gradient(rgba(88, 88, 88, 0.18), rgba(88, 88, 88, 0.18));
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size .3s, color .3s;
+
+  &:hover {
+    background-size: 100% 100%;
+    color: #fff;
+  }
+}
+
+.P-btn-sm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 160px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 15px;
+  color: $white;
+  padding: 5px 25px;
+
+  &:hover {
+
+  }
+}
+
+.P-btn-primary {
+  border: none;
+  color: white;
+  border-radius: 30px;
+}
+
+.P-btn-link {
+  color: #3D3D3D;
+  font-weight: 500;
+  span {
+    font-size: 18px
+  }
+}
+
+.P-btn-back {
+  font-size: 16px;
+  color: $gray-1;
+
+  .P-btn-text {
+    margin-left: 10px;
+  }
+}
+
+.P-btn-box {
+  margin-top: 25px;
+}
+.P-btn-link {
+  background: #fff;
+  border-radius: 20px;
+}
+
+select {
+  color: #80808045;
+  appearance: none;
+  padding: 10px;
+  border-radius: 13px;
+  border: 1px solid #80808045;
+}
+
+select,
+select option {
+  color: #000000;
+}
+
+select:invalid,
+select option[value=''] {
+  color: #999999;
+}
+
+.P-checkbox-P-radio {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.P-select-arrow {
+  position: absolute;
+  top: 61%;
+  right: 8px;
+  border: solid #D1D1D1;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 1.5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.P-checkbox-P-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.P-checkmark {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: solid 1px #D1D1D1;
+}
+
+.P-checkbox-P-radio:hover input ~ .P-checkmark {
+  background-color: #ccc;
+}
+
+.P-checkbox-P-radio input:checked ~ .P-checkmark {
+  background-color: #2196F3;
+}
+
+.P-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.P-checkbox-P-radio input:checked ~ .P-checkmark:after {
+  display: block;
+}
+
+.P-checkbox-P-radio .P-checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.P-input-search {
+
+  i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    color: $gray-5;
+  }
+
+  input {
+    padding-left: 40px;
+  }
+}
+
+.P-input-search-full-screen {
+
+  i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 7px;
+    color: $gray;
+  }
+
+  input {
+    padding-left: 50px;
+    background: $white;
+    border-radius: 1px;
+    border-bottom: 1px solid $light-2;
+    &::-webkit-input-placeholder {
+      font-size: 20px;
+      line-height: 3;
+    }
+  }
+}
+
+input[type=text].P-pi-20, input[type=password].P-pi-20, button.P-pi-20 {
+  padding: 14px;
+}
+
+input[type=text].P-pi-15, input[type=password].P-pi-15, button.P-pi-15 {
+  padding: 15px;
+}
+
+input.P-ri-45 {
+  padding-right: 45px;
+}
+
+.MuiPopover-root {
+  z-index: 90000!important;
+}

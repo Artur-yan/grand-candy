@@ -1,0 +1,102 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixins';
+
+.P-products-down {
+
+  .P-title {
+    position: relative;
+    @include grid(3, 60px);
+    border-bottom: #efd106 solid 2px;
+    cursor: pointer;
+    text-align: left;
+    font-size: $font-md-size;
+    font-weight: 600;
+    padding: 27px 0 29px 0;
+
+    .P-title-bottom-border {
+      position: absolute;
+      bottom: -2px;
+      background-image:linear-gradient(to right, $ping, #ffffff45);
+      background-size:0% 2px;
+      background-repeat:no-repeat;
+      background-position:bottom left;
+      width: 100%;
+      height: 2px;
+    }
+
+    &:hover .P-title-bottom-border {
+        background-position:bottom right;
+        background-size:100% 2px;
+        transition:
+                background-size 1s,
+                background-position 0s 1s;
+
+    }
+
+    &:hover {
+      font-weight: 700;
+    }
+  }
+
+  .P-image {
+    height: 380px;
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .P-products-content {
+    align-items: flex-start;
+    padding: 20px;
+    transition: all .5s .4s;
+    opacity: 0;
+  }
+
+  .P-products-top-menu {
+    width: 100%;
+    background: $white;
+    height: 0;
+    top: 83%;
+    left: 0;
+    overflow:hidden;
+    transition: all 0.4s cubic-bezier(0, 0, 0, 0.99);
+    box-shadow: $shadow;
+  }
+
+  .P-show-menu {
+    height: 420px;
+  }
+
+  .P-right-section {
+    padding: 0 25px;
+  }
+
+  .P-product-open {
+    height: 420px;
+  }
+}
+@keyframes cssAnimation {
+  to   { visibility: visible; }
+}
+
+//todo product border effect
+
+//.box {
+
+//  background-image:linear-gradient(#fff,#fff);
+//  background-position:bottom left;
+//  background-size:0% 2px;
+//  background-repeat:no-repeat;
+//  background-color:#161a1c;
+//  transition:
+//          background-size 1s, /*animate the background-size*/
+//          background-position 0s 1s; /*don't animate position and add a delay */
+//}
+//
+//.box:hover {
+//  background-position:bottom right;
+//  background-size:100% 2px;
+//}
+
+

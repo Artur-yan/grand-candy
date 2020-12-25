@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="92" viewBox="0 0 60 92">
+  <g id="ic_emptynotificcircles" transform="translate(-160 -290)">
+    <circle id="Ellipse_18" data-name="Ellipse 18" cx="3.5" cy="3.5" r="3.5" transform="translate(213 323)" fill="#1ecb7b"/>
+    <circle id="Ellipse_23" data-name="Ellipse 23" cx="2.5" cy="2.5" r="2.5" transform="translate(160 312)" fill="#1ecb7b"/>
+    <circle id="Ellipse_19" data-name="Ellipse 19" cx="1.5" cy="1.5" r="1.5" transform="translate(170 290)" fill="#fdc801"/>
+    <circle id="Ellipse_22" data-name="Ellipse 22" cx="1" cy="1" r="1" transform="translate(209 352)" fill="#fdc801"/>
+    <circle id="Ellipse_21" data-name="Ellipse 21" cx="2" cy="2" r="2" transform="translate(193 299)" fill="#2e84d9"/>
+    <circle id="Ellipse_20" data-name="Ellipse 20" cx="2.5" cy="2.5" r="2.5" transform="translate(210 293)" fill="#f04972"/>
+    <circle id="Ellipse_25" data-name="Ellipse 25" cx="2" cy="2" r="2" transform="translate(171 355)" fill="#f04972"/>
+    <circle id="Ellipse_42" data-name="Ellipse 42" cx="2" cy="2" r="2" transform="translate(189 378)" fill="#f04972" opacity="0"/>
+  </g>
+</svg>

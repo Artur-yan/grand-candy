@@ -1,0 +1,224 @@
+@import '../../assets/styles/variables';
+
+.P-modal {
+
+  .P-bubble-logo {
+
+  }
+
+  .P-center {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+
+    .P-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .P-form {
+      padding-top: 50px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .P-privacy {
+    text-align: left;
+    margin-top: 15px;
+  }
+
+  .P-center-sm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .P-modal-wrapper {
+    z-index: 3000;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+    transition: all .8s;
+    top: 50%;
+  }
+
+  .P-modal-wrapper-md {
+    text-align: center;
+    background: white;
+    border: 1px solid #d0cccc;
+    width: 35%;
+    height: 650px;
+
+    @media only screen and (max-width: 750px) {
+      width: 86%;
+      height: inherit;
+      min-height: 570px;
+    }
+
+    .P-left-sun {
+      position: absolute;
+      left: 0;
+      height: 39%;
+      max-height: 203px;
+
+      @media only screen and (max-width: 750px) {
+        height: 29%;
+      }
+    }
+  }
+
+  .P-modal-search-wrapper {
+    padding: 25px 40px 32px 50px ;
+
+    @media only screen and (max-width: 750px) {
+      padding: 15px 20px 20px 30px ;
+    }
+  }
+
+  .P-modal-wrapper-lg {
+    background: white;
+    border: 1px solid #d0cccc;
+    width: 43%;
+    border-radius: 15px;
+
+    @media only screen and (max-width: 750px) {
+      width: 100%;
+    }
+  }
+
+  .P-modal-wrapper-sm {
+    text-align: center;
+    background: white;
+    border: 1px solid #d0cccc;
+    width: 24%;
+
+    @media only screen and (max-width: 750px) {
+      width: 97%;
+    }
+  }
+
+  .P-modal-logout {
+    padding: 20px;
+    background: white;
+    border-radius: 20px;
+    width: 20%;
+
+    @media only screen and (max-width: 750px) {
+      width: 85%;
+    }
+  }
+
+  .P-modal-footer {
+    padding: 80px 0 20px 0;
+    .P-sign-up-text {
+      color: $gray-4;
+      font-size: $font-18-size;
+    }
+
+    .P-sign-up-btn {
+      color: $ping;
+      margin-left: 3px;
+      font-weight: 500;
+      cursor: pointer;
+      font-size: $font-18-size;
+    }
+  }
+
+  .P-modal-section-md {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 49%;
+    margin: 0 auto;
+    height: inherit;
+
+    @media only screen and (max-width: 1500px) {
+      width: 60%;
+    }
+
+    @media only screen and (max-width: 700px) {
+      width: 86%;
+    }
+  }
+
+  .P-modal-image {
+    width: 140px;
+  }
+
+  .P-modal-header {
+    background: #e2e2e2;
+    height: 40px;
+    line-height: 40px;
+    padding: 5px 20px;
+    text-align: right;
+  }
+
+  .P-modal-cover {
+    z-index: 2000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.2);
+    height: 100vh;
+    width: 100%;
+  }
+
+  .P-modal-body {
+    padding: 10px 15px;
+    text-align: center;
+  }
+
+  .P-modal-footer {
+    position: fixed;
+    bottom: 0;
+    @media only screen and (max-width: 700px) {
+      padding-top: 25px;
+    }
+  }
+
+  .modal-image-box {
+
+  }
+
+  .P-close-modal-btn {
+    color: white;
+    cursor: pointer;
+    float: right;
+    font-size: 30px;
+    margin: 0;
+  }
+
+  .P-close-modal-btn:hover {
+    color: black;
+  }
+
+  .P-btn-cancel {
+    background-color: #b71c1c;
+    float: left;
+  }
+
+  .P-btn-continue {
+    background-color: #1b5e20;
+    float: right;
+  }
+
+  .P-back-shed {
+    background-color: rgba(48, 49, 48, 0.42);
+    height: 100%;
+    position: fixed;
+    transition: all 1.3s;
+    width: 100%;
+  }
+
+  .P-open-modal-btn {
+    margin: 15px;
+    padding: 10px;
+  }
+}

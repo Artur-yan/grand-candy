@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="77" height="104" viewBox="0 0 77 104">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="77" height="104" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="ic_search_putik" data-name="ic_search putik" clip-path="url(#clip-path)">
+    <g transform="translate(-139 -280)">
+      <circle id="Ellipse_18" data-name="Ellipse 18" cx="3.5" cy="3.5" r="3.5" transform="translate(181 280)" fill="#1ecb7b"/>
+      <circle id="Ellipse_23" data-name="Ellipse 23" cx="2.5" cy="2.5" r="2.5" transform="translate(201 369)" fill="#1ecb7b"/>
+      <circle id="Ellipse_19" data-name="Ellipse 19" cx="2" cy="2" r="2" transform="translate(204 297)" fill="#fdc801"/>
+      <circle id="Ellipse_22" data-name="Ellipse 22" cx="3" cy="3" r="3" transform="translate(150 359)" fill="#fdc801"/>
+      <circle id="Ellipse_21" data-name="Ellipse 21" cx="2" cy="2" r="2" transform="translate(212 333)" fill="#2e84d9"/>
+      <circle id="Ellipse_44" data-name="Ellipse 44" cx="3" cy="3" r="3" transform="translate(141 309)" fill="#2e84d9"/>
+      <circle id="Ellipse_20" data-name="Ellipse 20" cx="3" cy="3" r="3" transform="translate(172 329)" fill="#f04972"/>
+      <circle id="Ellipse_20-2" data-name="Ellipse 20" cx="1.5" cy="1.5" r="1.5" transform="translate(172 281)" fill="#f04972"/>
+    </g>
+  </g>
+</svg>

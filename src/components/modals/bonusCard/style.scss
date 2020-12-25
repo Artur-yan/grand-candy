@@ -1,0 +1,100 @@
+@import '../../../assets/styles/variables';
+
+.P-bonus-modal {
+  display: flex;
+  padding: 5px;
+
+  @media only screen and (max-width: 750px) {
+    flex-direction: column;
+  }
+
+  .P-bonus-modal-sun {
+    width: 47%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 9px;
+    padding: 85px 0 85px 0;
+
+    @media only screen and (max-width: 750px) {
+      width: 100%;
+      padding: 0;
+    }
+    .P-modal-sun {
+      background-image: url('../../../assets/img/sun.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 400px;
+      width: 100%;
+      transform: scale(1.7);
+
+      @media only screen and (max-width: 750px) {
+        height: 200px;
+        background-size: 70%;
+      }
+    }
+
+    .P-logo {
+      background: $white;
+      display: flex;
+      height: 9vw;
+      width: 9vw;
+      border-radius: 50%;
+      justify-content: center;
+
+      @media only screen and (max-width: 750px) {
+        height: 150px;
+        width: 150px;
+      }
+
+      .P-border-ping {
+        height: 95%;
+        width: 95%;
+        border-radius: 50%;
+        border: $main-color 2px solid
+      }
+
+      .P-border-blue {
+        height: 94%;
+        width: 94%;
+        border-radius: 50%;
+        border: $blue 2px solid;
+        padding: 10px;
+      }
+
+      .P-logo-img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .P-bonus-modal-actions {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    padding: 20px;
+    justify-content: center;
+
+    @media only screen and (max-width: 750px) {
+      width: 100%;
+    }
+
+    .P-action-title {
+      font-size: 31px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      width: 80%;
+    }
+
+    .P-action-description {
+      font-size: 20px;
+      width: 90%;
+      margin-bottom: 40px;
+    }
+
+  }
+}
+

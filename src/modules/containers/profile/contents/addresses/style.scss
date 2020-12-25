@@ -1,0 +1,78 @@
+@import '../../../../../assets/styles/variables';
+@import '../../../../../assets/styles/mixins';
+
+.P-address-list {
+  margin-top: 35px;
+  border-radius: 20px;
+
+  .P-address-info-card {
+    padding: 15px 10px;
+    border-radius: 20px;
+    box-shadow:  0 4px 11px #373A6524;;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .P-card-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .P-address-number {
+    font-size: 16px;
+    color: $gray-1;
+  }
+
+  .P-area-img {
+    padding: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+  }
+
+  .P-area-galera {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+
+    .P-area-img {
+      margin-left: 8px;
+    }
+  }
+
+  .P-address-location {
+    margin-top: 20px;
+    display: flex;
+
+    .P-area-address-text {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+
+    .P-area {
+      font-size: 20px;
+    }
+
+    .P-area-address {
+      padding: 0 15px;
+    }
+  }
+
+
+  .P-address-details {
+    padding-top: 20px;
+
+    .P-address-info {
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+}
+
+

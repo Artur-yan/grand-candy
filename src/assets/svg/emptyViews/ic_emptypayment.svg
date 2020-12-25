@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="89" height="78.193" viewBox="0 0 89 78.193">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="89" height="78.193" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="ic_emptypayment" clip-path="url(#clip-path)">
+    <g transform="translate(-7119 -7847)">
+      <g id="Group_2241" data-name="Group 2241" transform="translate(6973 7402)">
+        <ellipse id="Ellipse_17" data-name="Ellipse 17" cx="37.158" cy="1.895" rx="37.158" ry="1.895" transform="translate(153.583 519.404)" fill="#586376" opacity="0.19"/>
+        <g id="credit-card_8_" data-name="credit-card (8)" transform="translate(159 408.994)">
+          <path id="Path_4180" data-name="Path 4180" d="M54.412,64.006H8.488A8.488,8.488,0,0,0,0,72.494v.533A1.476,1.476,0,0,0,1.476,74.5H61.423A1.476,1.476,0,0,0,62.9,73.026v-.533A8.488,8.488,0,0,0,54.412,64.006Z" fill="#586376"/>
+          <path id="Rectangle_392" data-name="Rectangle 392" d="M2,0H61a2,2,0,0,1,2,2V18A10,10,0,0,1,53,28H10A10,10,0,0,1,0,18V2A2,2,0,0,1,2,0Z" transform="translate(0 79.006)" fill="#586376"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

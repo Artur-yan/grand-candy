@@ -1,0 +1,27 @@
+@import '../../../assets/styles/variables';
+
+.P-modal-rate {
+  padding: 40px;
+  background: $white;
+  width: 22%;
+
+  .P-rate-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .P-rate-desc {
+      width: 80%;
+    }
+  }
+
+  .P-starts {
+    font-size: 30px;
+
+    .icon-ic_quality {
+      margin: 15px;
+      color: $ping;
+      cursor: pointer;
+    }
+  }
+}

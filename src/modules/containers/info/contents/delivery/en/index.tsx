@@ -1,0 +1,16 @@
+import React from "react";
+export default function () {
+  return (
+    <>
+        <b>Delivery terms</b>
+         Products can be ordered through “Grand Candy” mobile application and website. Customers choose the product, add in purchasing basket,mention phone number, required delivery address, date and period of time in which the order must be delivered, comments in case of necessityin order to provide more detailed information regarding the delivery, choose the payment method, as well as mentions whether to use the collected bonuses or not. Customers can contact the customer service specialist online, if, after placing the order, there is a need to buy more products or toreplace one of the ordered products by another. Customers can track new order status in the “Personal page” section (e.g. “Collecting”, “Ready to be delivered”, “On the road” or “Delivered”) and see all information regarding the previous orders. It should be pointed out that that there are no limitations referring to the price of the products. In a word, regardless the fact that customershave an order with conditional value of 100 or 5 500 AMD, the payment will be proceeded exceptionally according to price of the product and the delivery cost. Delivery is available in the whole territory of Yerevan city. The approximate delivery time is 40 minutes. Delivery orders can be placed every day in the period of 10:40-18:50. Delivery fee for orders in Yerevan are as follows: For orders till 5 000 AMD 1 000 AMD For orders 5 000 – 10 000 AMD 500 AMD For orders 10 000 AMD and more Free 
+        <b>Attention!</b>
+         - Delivery delay can be caused by unforeseen circumstances only such as traffic jam, accident and another similar artificial reason.In such cases customer is notified about the delivery time change as soon as possible. - For proper and timely delivery, please fill in all the fields attentively and in case of any questions, please, contact our customersupport specialists online in order to find the solution as soon as possible.  
+        <b>Payment terms</b>
+         Payment through the mobile application and website is possible to do in two ways: online and cash. Online payments can be doneby “ARCA”, “Visa” and “Master Card” payment cards and cash payments are made upon receipt of the order. The acceptable currency is Armenian Dram (AMD). All the prices introduced in the website are final and include all the taxes. The receipt certifying the fact of purchase isprovided to the customer regardless the payment method. There is no partial refund.  
+        <b>Return terms</b>
+         Customer who has bought a product with poor quality has right to return the product if the defects were found before the expirationdate and when a receipt is presented, as a proof of purchase. In the absence of a dispute over the causes of product defects the soldproduct with poor quality will be replaced by a product of good quality or the amount paid by the customer will be refunded.
+
+    </>
+  )
+}

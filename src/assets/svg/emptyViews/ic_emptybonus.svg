@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="89" height="78.193" viewBox="0 0 89 78.193">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="89" height="78.193" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="ic_emptybonus" clip-path="url(#clip-path)">
+    <g transform="translate(-7119 -7847)">
+      <g id="Group_2241" data-name="Group 2241" transform="translate(6973 7402)">
+        <ellipse id="Ellipse_17" data-name="Ellipse 17" cx="37.158" cy="1.895" rx="37.158" ry="1.895" transform="translate(153.583 519.404)" fill="#586376" opacity="0.19"/>
+        <g id="credit-card_8_" data-name="credit-card (8)" transform="translate(159 408.994)">
+          <path id="Path_4180" data-name="Path 4180" d="M54.412,64.006H8.488A8.488,8.488,0,0,0,0,72.494v.533A1.476,1.476,0,0,0,1.476,74.5H61.423A1.476,1.476,0,0,0,62.9,73.026v-.533A8.488,8.488,0,0,0,54.412,64.006Z" fill="#586376"/>
+          <path id="Path_4181" data-name="Path 4181" d="M0,200.6a2.583,2.583,0,0,0,2.583,2.583H19.8l12.96,13.537a2.579,2.579,0,0,0,1.92.855h19.73a8.488,8.488,0,0,0,8.488-8.488V192.813a1.476,1.476,0,0,0-1.476-1.476H1.476A1.476,1.476,0,0,0,0,192.813Z" transform="translate(0 -111.668)" fill="#586376"/>
+          <path id="Path_4182" data-name="Path 4182" d="M9.934,322.769a27.7,27.7,0,0,0-2.4-2.441A1.109,1.109,0,0,0,5.962,321.9l.36.36H1.113a1.109,1.109,0,0,0,0,2.218H6.322l-.36.36A1.109,1.109,0,1,0,7.531,326.4a28.919,28.919,0,0,0,2.4-2.443,1.107,1.107,0,0,0,0-1.192Z" transform="translate(-0.004 -226.507)" fill="#586376"/>
+          <path id="Path_4183" data-name="Path 4183" d="M9.934,322.769a27.7,27.7,0,0,0-2.4-2.441A1.109,1.109,0,0,0,5.962,321.9l.36.36H1.113a1.109,1.109,0,0,0,0,2.218H6.322l-.36.36A1.109,1.109,0,1,0,7.531,326.4a28.919,28.919,0,0,0,2.4-2.443,1.107,1.107,0,0,0,0-1.192Z" transform="translate(25.108 428.224) rotate(180)" fill="#586376"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,104 @@
+@import '../../../assets/styles/variables';
+
+.P-basket-content {
+
+  .P-basket {
+    height: 100%;
+    width: 100%;
+    max-width: 480px;
+    position: fixed;
+    z-index: $modal-z + 10;
+    top: 0;
+    right: -100%;
+    background-color: $white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    box-shadow: $shadow;
+
+    .P-img {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border-radius: 15px;
+      width: 85px;
+      height: 80px;
+      min-width: 89px;
+    }
+
+    .P-item {
+      padding-bottom: 35px;
+    }
+
+    .P-basket-item {
+      padding: 38px 30px 20px 30px;
+      height: 100%;
+
+      .P-item-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 25px;
+      }
+
+      .P-title {
+        font-size: $font-md-size;
+        font-weight: 600;
+      }
+    }
+
+    .P-basket-head {
+      padding-bottom: 33px;
+    }
+
+    .P-basket-bottom {
+      display: flex;
+      flex-direction: column;
+      margin-top: auto;
+      padding: 0 0 10px 10px;
+
+      .P-total {
+        margin-left: auto;
+        padding-bottom: 20px;
+        margin-right: 20px;
+      }
+    }
+
+    .P-closebtn {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 15px;
+      color: $gray-2;
+      display: block;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+  }
+
+  .P-is-open {
+    right: 0;
+  }
+}
+
+.P-item-counter {
+  align-self: flex-end;
+  display: flex;
+
+  .P-counter-btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: $light-gray;
+    user-select: none;
+  }
+
+  .P-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 7px 0 7px;
+  }
+}

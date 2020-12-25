@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="74.316" height="70.371" viewBox="0 0 74.316 70.371">
+  <g id="ic_emptynotific" transform="translate(-113.583 -395.823)">
+    <g id="_474240-PGDWGB-803" data-name="474240-PGDWGB-803" transform="translate(-51.617 96.152)">
+      <ellipse id="Ellipse_16" data-name="Ellipse 16" cx="37.158" cy="1.895" rx="37.158" ry="1.895" transform="translate(165.2 366.252)" fill="#586376" opacity="0.19"/>
+      <g id="Group_2161" data-name="Group 2161" transform="translate(-37.887 192.301)">
+        <g id="Group_2158" data-name="Group 2158" transform="translate(236.16 135.888)">
+          <rect id="Rectangle_380" data-name="Rectangle 380" width="5.961" height="40.659" transform="translate(0 0)" fill="#3b4658"/>
+        </g>
+        <g id="Group_2159" data-name="Group 2159" transform="translate(217.086 95.449)">
+          <path id="Path_4173" data-name="Path 4173" d="M256.433,199.014H228.516a11.43,11.43,0,0,0-11.43,11.43v18.288h50.777V210.444A11.43,11.43,0,0,0,256.433,199.014Z" transform="translate(-217.086 -187.093)" fill="#586376"/>
+          <path id="Path_4176" data-name="Path 4176" d="M484.774,231.719V213.981a11.086,11.086,0,0,0-22.172,0v17.738Z" transform="translate(-434.341 -190.527)" fill="#3b4658"/>
+          <path id="Path_4177" data-name="Path 4177" d="M463.962,393.269v17.738a11.086,11.086,0,1,0,22.172,0V393.269Z" transform="translate(-435.545 -358.988)" fill="#586376"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

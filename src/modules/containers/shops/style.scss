@@ -1,0 +1,40 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixins';
+
+.P-shops {
+  display: flex;
+  margin-left: -10vw;
+  width: calc(100% + 20vw);
+
+  @media only screen and (max-width: 800px) {
+   flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .P-shops-section {
+    width: 25%;
+    padding: 50px 15px 0 50px;
+    overflow: hidden;
+    position: relative;
+    @media only screen and (max-width: 800px) {
+      width: 100%;
+      padding: 0;
+    }
+    .P-shop-title {
+      font-size: 30px;
+      font-weight: 500;
+    }
+  }
+
+  .P-map {
+    position: relative;
+    width: 75%;
+    min-height: 100vh;
+
+    @media only screen and (max-width: 800px) {
+      width: 100%;
+      min-height: 400px;
+    }
+  }
+}

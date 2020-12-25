@@ -1,0 +1,69 @@
+@import '../../../assets/styles/variables';
+
+.P-menu-content {
+
+  .P-menu-items {
+    padding: 10px 10px;
+
+    .P-menu-item {
+      padding: 20px;
+    }
+
+  }
+
+  .P-menu-user {
+    margin-right: 20px;
+    align-items: center;
+    display: flex;
+    border-bottom: 1px solid $ping;
+    width: 100%;
+    padding-bottom: 10px;
+
+    .P-menu-user-info {
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+
+      .P-avatar {
+        width: 50px;
+      }
+
+      p {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .P-menu {
+    height: 100%;
+    width: 80%;
+    max-width: 480px;
+    position: fixed;
+    z-index: $modal-z + 10;
+    top: 0;
+    right: -100%;
+    background-color: $white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    box-shadow: $shadow;
+
+    .P-menu-head {
+      padding-bottom: 33px;
+    }
+
+    .P-closebtn {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 15px;
+      color: $gray-2;
+      display: block;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+  }
+
+  .P-is-open {
+    right: 0;
+  }
+}
+

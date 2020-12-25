@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'Grand-Candy';
+  src:  url('fonts/Grand-Candy.eot?24ww9t');
+  src:  url('fonts/Grand-Candy.eot?24ww9t#iefix') format('embedded-opentype'),
+    url('fonts/Grand-Candy.ttf?24ww9t') format('truetype'),
+    url('fonts/Grand-Candy.woff?24ww9t') format('woff'),
+    url('fonts/Grand-Candy.svg?24ww9t#Grand-Candy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Grand-Candy' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ic_export:before {
+  content: "\e902";
+}
+.icon-ic_hr:before {
+  content: "\e908";
+}
+.icon-ic_quality:before {
+  content: "\e90a";
+}
+.icon-ic_sales:before {
+  content: "\e90b";
+}
+.icon-ic_international:before {
+  content: "\e90c";
+}
+.icon-ic_mail:before {
+  content: "\e90d";
+}
+.icon-ic_eye:before {
+  content: "\e90e";
+}
+.icon-ic_likefull:before {
+  content: "\e90f";
+}
+.icon-ic_location:before {
+  content: "\e910";
+}
+.icon-ic_phone:before {
+  content: "\e912";
+}
+.icon-ic_plusbasket:before {
+  content: "\e915";
+}
+.icon-ic_minus:before {
+  content: "\e916";
+}
+.icon-like-3:before {
+  content: "\e917";
+}
+.icon-search-16:before {
+  content: "\e91a";
+}
+.icon-shopping-cart-4:before {
+  content: "\e91c";
+}
+.icon-ic_3dotshoriz:before {
+  content: "\e900";
+}
+.icon-ic_3dotsvert:before {
+  content: "\e901";
+}
+.icon-ic_arrowdown:before {
+  content: "\e903";
+}
+.icon-ic_arrowup:before {
+  content: "\e906";
+}
+.icon-ic_arrowleft:before {
+  content: "\e904";
+}
+.icon-ic_arrowright:before {
+  content: "\e905";
+}
+.icon-ic_back:before {
+  content: "\e907";
+}
+.icon-ic_close:before {
+  content: "\e909";
+}
+.icon-ic_plus:before {
+  content: "\e911";
+}
+.icon-ic_search:before {
+  content: "\e913";
+}
+.icon-ic_settings:before {
+  content: "\e914";
+}
+.icon-ic_venues:before {
+  content: "\e918";
+}
+.icon-ic_push:before {
+  content: "\e919";
+}
+.icon-Ic_pending:before {
+  content: "\e91b";
+}
+.icon-delete_bin:before {
+  content: "\e91d";
+}
+.icon-ic_cash2:before {
+  content: "\e91e";
+}
+.icon-ic_cash:before {
+  content: "\e91f";
+}
+.icon-Group-2380:before {
+  content: "\e920";
+}
+.icon-ic_comment:before {
+  content: "\e921";
+}
+.icon-ic_date:before {
+  content: "\e922";
+}
+.icon-ic-shop:before {
+  content: "\e923";
+}
+.icon-Group-2388:before {
+  content: "\e924";
+}
+.icon-attachment-1:before {
+  content: "\e925";
+}
+.icon-photo-camera-9:before {
+  content: "\e926";
+}
+.icon-ic_stargrey:before {
+  content: "\e927";
+  color: #dedede;
+}
+.icon-ic_starpink:before {
+  content: "\e928";
+  color: #e2066d;
+}
+.icon-ic_emptycheck:before {
+  content: "\e929";
+  color: #fff;
+}
+.icon-ic_check:before {
+  content: "\e92a";
+  color: #fff;
+}

@@ -1,0 +1,70 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixins';
+
+.P-about {
+  width: 90%;
+  margin: 0 auto;
+
+  .P-additional-img {
+    color: $white;
+    font-size: 50px;
+    font-weight: 500;
+
+    @media only screen and (max-width: 800px) {
+      font-size: 20px;
+    }
+  }
+
+  .P-description {
+    font-size: 58px;
+    font-weight: 500;
+    padding: 50px;
+    max-width: 60%;
+    color: $white;
+    margin-top: auto;
+  }
+
+  .P-about-title {
+    line-height: 5;
+  }
+
+  .P-about-album {
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 800px) {
+      height: 167px;
+    }
+  }
+
+  .P-center-img {
+    display: flex;
+    background-image: url("../../../assets/img/factoryX2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 17px;
+    margin-bottom: 17px;
+  }
+
+  .P-right-img:nth-child(1) {
+    height: 50%;
+    display: flex;
+    background-image: url("../../../assets/img/branch2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 17px;
+  }
+
+  .P-right-img:nth-child(2) {
+    height: 50%;
+    display: flex;
+    background-image: url("../../../assets/img/factory4.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 17px;
+  }
+}

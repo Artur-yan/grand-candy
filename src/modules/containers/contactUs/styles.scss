@@ -1,0 +1,95 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixins';
+
+.P-contact-us {
+  display: flex;
+  flex-direction: column;
+
+  .P-map-content {
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    box-shadow: 0 3px 44px #00000017;
+
+    @media only screen and (max-width: 800px) {
+      flex-direction: column;
+    }
+
+    .P-map-info {
+      width: 40%;
+      padding: 60px;
+      background: #F8F8F8 0 0;
+
+      @media only screen and (max-width: 800px) {
+        width: 100%;
+        padding: 20px;
+      }
+    }
+
+    .P-map-section {
+      position: relative;
+      width: 60%;
+      min-height: 300px;
+      @media only screen and (max-width: 800px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .P-contact-cards {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .P-contact-card {
+      @include grid(3, 50px);
+      margin-top: 60px;
+      position: relative;
+      padding: 15px 0;
+      border-radius: 27px;
+      box-shadow: 0 5px 14px #00000029;
+      width: 430px;
+      min-height: 261px;
+
+      @media only screen and (min-width: 900px)  {
+        @include grid(2, 50px);
+      }
+
+      @media only screen and (max-width: 800px) {
+        flex-direction: column;
+        width: 100%;
+        margin-right: 0!important;
+      }
+
+      .P-line {
+        height: 2px;
+        width: 250px;
+        margin: 5px auto;
+        background-image: url('../../../assets/img/candyImgSun.png');
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+      }
+
+      .P-contact-badge {
+        //position: absolute;
+        box-shadow: 0 3px 14px #00000038;;
+        //top: -30px;
+        height: 65px;
+        width: 65px;
+        margin: -50px auto 0;
+        border-radius: 50%;
+        border: solid 5px white;
+        background-image:linear-gradient(to bottom, #F5BF2A, #F1DD62);
+
+        .P-icon {
+          color: $white;
+          font-size: 26px;
+        }
+      }
+
+    }
+  }
+}

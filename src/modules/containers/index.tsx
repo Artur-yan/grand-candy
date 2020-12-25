@@ -1,0 +1,16 @@
+import './styles.scss';
+export { Home } from "./home/home";
+export { Products } from "./products";
+export { Product } from "./product/product";
+export { Favorite } from "./product/favorite";
+export { Checkout } from "./checkout/checkout";
+export { News } from "./news";
+export { NewsPage } from "./news/news";
+export { Profile } from "./profile";
+export { ContactUs } from "./contactUs";
+export { Shops } from "./shops";
+export { Careers } from "./careers";
+export { About } from "./about";
+export { Info } from "./info";
+export { FAQ } from "./faq";
+export { HowItsMade } from "./howItsMade";

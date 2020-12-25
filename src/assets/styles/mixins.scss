@@ -1,0 +1,12 @@
+
+@mixin grid($count, $offset) {
+  width: calc((100% / #{$count}) - #{$offset});
+
+  &:nth-child(odd), &:nth-child(even) {
+    margin-right: calc((#{$count} * #{$offset}) / #{$count - 1});
+  }
+
+  &:nth-child(#{$count}n) {
+    margin-right: 0;
+  }
+}

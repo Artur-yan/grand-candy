@@ -1,0 +1,136 @@
+@import '../../../assets/styles/variables';
+
+.P-news {
+  width: 95%;
+  margin: 0 auto;
+
+  .P-news-section {
+    font-size: 28px;
+    font-weight: 700;
+    padding: 0 0 40px 0;
+  }
+
+  .P-news-header {
+    width: 100%;
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 800px) {
+      flex-direction: column;
+    }
+
+    .P-first-news {
+      width: 66%;
+      box-shadow: -2px 0px 14px #00000042;
+      justify-content: center;
+      align-items: center;
+      border-radius: 31px;
+      display: flex;
+      padding: 10px;
+
+      @media only screen and (max-width: 800px) {
+        width: 100%;
+      }
+
+      .P-info {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 18px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+        padding: 108px 0 34px 60px;
+
+        .P-date {
+          font-size: 16px;
+          color: white;
+        }
+
+        .P-title {
+          width: 80%;
+          font-size: 38px;
+          color: $white;
+          margin: 15px 0 43px 0;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .P-view-count {
+          font-size: 16px;
+          color: white;
+
+          .P-count {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+
+    .P-second-news {
+      width: 31.5%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      justify-content: center;
+
+      @media only screen and (max-width: 800px) {
+        margin-top: 20px;
+        width: 100%;
+      }
+
+      .P-second-news-card {
+        width: 100%;
+        height: 100%;
+      }
+
+      .P-info {
+
+        .P-title {
+          font-size: 38px;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.P-news-page {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 70px 0 40px 0;
+
+  .P-info {
+    width: 75%;
+    .P-date {
+      font-size: 20px;
+      color: $gray-4;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .P-title {
+      font-size: 45px;
+      font-weight: 500;
+    }
+  }
+
+  .P-description {
+    margin-top: 45px;
+    margin-bottom: 120px;
+    font-size: 20px;
+  }
+
+  .P-additional-news {
+    padding-top: 50px;
+    width: 100%;
+  }
+}

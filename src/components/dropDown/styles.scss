@@ -1,0 +1,23 @@
+.P-dropdown-content {
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 63px
+}
+
+.P-dropdown-content {
+
+ .P-drop-link {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+}
+
+.P-drop-link:hover {
+  background-color: #f1f1f1;
+}

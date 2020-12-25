@@ -1,0 +1,209 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixins';
+
+.P-profile {
+  width: 83%;
+  margin: 0 auto;
+  padding-top: 60px;
+
+  @media only screen and (max-width: 800px) {
+    width: 100%;
+  }
+
+  .P-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    align-items: flex-start;
+
+    .P-profile-card {
+      display: flex;
+      flex-direction: column;
+      box-shadow: $shadow;
+      width: 25%;
+
+      .P-card-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 20px;
+
+        .P-avatar {
+          width: 30%;
+          margin: 0 auto;
+          border-radius: 50%;
+          padding: 60px;
+          border: 2px solid $ping;
+          cursor: pointer;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+
+          .P-upload-icon {
+            position: absolute;
+            display: none;
+          }
+
+          &:hover {
+            box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+
+            .P-upload-icon {
+              display: block;
+              color: $white;
+              font-size: 40px;
+              font-weight: 500;
+            }
+          }
+        }
+
+        .P-user-info {
+          text-align: center;
+          .P-user-name {
+            margin-top: 10px;
+            font-size: 22px;
+          }
+        }
+      }
+    }
+
+    .P-form-card {
+      width: 67%;
+      display: flex;
+      flex-direction: column;
+      padding: 40px;
+      box-shadow: $shadow;
+      min-height: 650px;
+
+      @media only screen and (max-width: 800px) {
+        padding: 10px;
+        width: 100%;
+      }
+
+      .P-info-btn {
+        width: 30%;
+
+        @media only screen and (max-width: 800px) {
+          width: 50%;
+          margin-right: 0!important;
+        }
+      }
+
+      .P-form-section {
+        margin-bottom: 60px;
+        position: relative;
+
+        .P-form-title {
+          font-size: 22px;
+          font-weight: 500;
+        }
+
+        .P-form-inputs {
+          padding-bottom: 40px;
+          @include grid(2, 30px);
+
+          @media only screen and (max-width: 800px) {
+            width: 100%;
+            margin-right: 0!important;
+          }
+        }
+      }
+    }
+  }
+
+  .P-content-mob {
+
+    .P-card-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 3px;
+
+      .P-avatar {
+        width: 20%;
+        margin: 0 auto;
+        border-radius: 50%;
+        padding: 30px;
+        border: 2px solid $ping;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+        .P-upload-icon {
+          position: absolute;
+          display: none;
+        }
+
+        &:hover {
+          box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+
+          .P-upload-icon {
+            display: block;
+            color: $white;
+            font-size: 40px;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .P-user-info {
+        text-align: center;
+        .P-user-name {
+          margin-top: 10px;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  .P-profile-navbar {
+    padding-top: 40px;
+    padding-bottom: 60px;
+
+    .P-category-title {
+      padding-bottom: 20px;
+      padding-left: 10px;
+      font-size: 15px;
+      font-weight: 400;
+      color: $gray;
+    }
+
+    .P-category-section {
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .P-active-category {
+      background-image: url('../../../assets/img/rectangle.png');
+      background-size: contain;
+      background-position: -5% 50%;
+      background-repeat: no-repeat;
+
+      .P-category {
+        font-size: 18px;
+        background: $white;
+        font-weight: 700;
+      }
+    }
+
+    .P-category-content {
+      padding-top: 5%;
+    }
+
+    .P-category {
+      width: 98%;
+      margin-left: auto;
+      padding: 21px 25px 21px 25px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}

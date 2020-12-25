@@ -1,0 +1,14 @@
+@import '../../../../../assets/styles/variables';
+@import '../../../../../assets/styles/mixins';
+
+.P-payment-cards {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+
+  .G-empty-view {
+    margin: 0 auto;
+  }
+}
+
+

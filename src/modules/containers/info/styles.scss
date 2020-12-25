@@ -1,0 +1,67 @@
+@import '../../../assets/styles/variables';
+
+.P-info-section {
+  width: 90%;
+  margin: 50px auto 50px auto;
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and (max-width: 800px) {
+    flex-direction: column;
+  }
+
+  .P-left-menu {
+    width: 27%;
+    padding: 15px 20px 30px 20px ;
+    border: 1px solid #D2D2D2;
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (max-width: 800px) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .P-menu-item {
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      justify-content: space-between;
+      padding: 25px 0 25px 0;
+      font-size: 16px;
+      font-weight: 700;
+      border-bottom: 1px solid #D2D2D2;
+
+      .P-menu-arrow {
+        font-weight: 700;
+        font-size: 11px;
+        color: #707070;
+        padding-left: 12px;
+      }
+    }
+  }
+
+  .P-info-content {
+    width: 65%;
+    font-size: 20px;
+
+    @media only screen and (max-width: 800px) {
+      width: 100%;
+    }
+  }
+
+  .P-info-text {
+    font-size: 20px;
+    //color: $gray-1;
+    margin-bottom: 20px;
+
+    .P-info-ul {
+      margin-left: 41px;
+      margin-top: 10px;
+    }
+
+    b {
+      color: $gray-5;
+    }
+  }
+}

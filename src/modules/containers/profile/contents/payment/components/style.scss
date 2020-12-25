@@ -1,0 +1,53 @@
+@import '../../../../../../assets/styles/variables';
+@import '../../../../../../assets/styles/mixins';
+
+.P-payment-card {
+  width: 333px;
+  height: 192px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 9px 10px 38px #75431F63;
+  border-radius: 29px;
+  margin-top: 20px;
+
+  .P-payment-card-name {
+    color: $white;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .P-payment-card-number {
+    display: flex;
+    justify-content: space-around;
+    color: $white;
+
+    span {
+      font-family: 'Para type medium', 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 500;
+      font-size:  calc(20px + .2vw);
+    }
+  }
+
+  .P-payment-card-header {
+    display: flex;
+    justify-content: space-between;
+
+    .P-card-logo {
+      width: 53px;
+    }
+
+    .P-payment-card-actions {
+      display: flex;
+      justify-content: space-between;
+      width: 50px;
+      color: white;
+      font-size: 20px;
+    }
+  }
+}
+
+
+

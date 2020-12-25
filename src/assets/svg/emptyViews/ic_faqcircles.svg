@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="138.648" height="181.262" viewBox="0 0 138.648 181.262">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="138.648" height="181.262" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="ic_faqcircles" clip-path="url(#clip-path)">
+    <g transform="translate(-19561.418 -1771)">
+      <ellipse id="Ellipse_63" data-name="Ellipse 63" cx="6" cy="5.5" rx="6" ry="5.5" transform="translate(19589 1881)" fill="#1ecb7b"/>
+      <circle id="Ellipse_64" data-name="Ellipse 64" cx="2.5" cy="2.5" r="2.5" transform="translate(19667 1823)" fill="#1ecb7b"/>
+      <circle id="Ellipse_65" data-name="Ellipse 65" cx="4.5" cy="4.5" r="4.5" transform="translate(19585 1780)" fill="#2e84d9"/>
+      <circle id="Ellipse_66" data-name="Ellipse 66" cx="2.5" cy="2.5" r="2.5" transform="translate(19596 1821)" fill="#fdc801"/>
+      <ellipse id="Ellipse_67" data-name="Ellipse 67" cx="1.5" cy="2" rx="1.5" ry="2" transform="translate(19669 1894)" fill="#fdc801"/>
+      <circle id="Ellipse_68" data-name="Ellipse 68" cx="4" cy="4" r="4" transform="translate(19683 1864)" fill="#2e84d9"/>
+      <circle id="Ellipse_69" data-name="Ellipse 69" cx="4.5" cy="4.5" r="4.5" transform="translate(19643 1771)" fill="#f04972"/>
+      <circle id="Ellipse_70" data-name="Ellipse 70" cx="4.5" cy="4.5" r="4.5" transform="translate(19650 1851)" fill="#f04972"/>
+    </g>
+  </g>
+</svg>

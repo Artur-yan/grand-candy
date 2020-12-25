@@ -1,0 +1,225 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixins';
+
+.P-products {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 60px;
+
+  @media only screen and (max-width: 750px) {
+    width: 100%;
+  }
+
+  .P-categories {
+    @media only screen and (min-width: 1200px) {
+      min-height: 300px;
+    }
+  }
+
+  .P-path {
+    padding-left: 10px;
+    margin-bottom: 15px;
+  }
+
+  .P-category-title {
+    padding-bottom: 20px;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: $gray;
+  }
+
+  .P-category-section {
+    cursor: pointer;
+  }
+
+  //.P-category-section:hover {
+  //  background-image: url('../../assets/img/rectangle.png');
+  //  background-size: contain;
+  //  background-position:right;
+  //  background-repeat: no-repeat;
+  //  border-radius: 10px;
+  //  box-shadow: 0 4px 52px #373A6521;
+  //
+  //  .P-category {
+  //    background: $white;
+  //    font-weight: 700;
+  //  }
+  //}
+
+  .P-active-category {
+    background-image: url('../../assets/img/rectangle.png');
+    background-size: contain;
+    background-position:right;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 4px 52px #373A6521;
+
+    .P-category {
+      background: $white;
+      font-weight: 700;
+    }
+  }
+
+  .P-category-content {
+    padding-top: 5%;
+  }
+
+  .P-category {
+    width: 98%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 15px 25px 15px 12px;
+    align-items: center;
+  }
+
+  //.P-category:hover {
+  //  background: $white;
+  //  font-weight: 700;
+  //}
+}
+
+.P-products-card {
+  padding-left: 50px;
+}
+
+//product
+
+.P-product {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+
+  @media only screen and (max-width: 800px) {
+    flex-direction: column;
+  }
+  .P-favorite-section {
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 9;
+  }
+
+  .P-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 34%;
+    padding: 19% 0 19% 0;
+    border-radius: 15px;
+    min-width: 125px;
+    min-height: 125px;
+
+    @media only screen and (max-width: 800px) {
+      width: 100%;
+      min-height: 315px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+
+  .P-info {
+    width: 63%;
+    padding: 25px 40px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    background: $light;
+
+    @media only screen and (max-width: 800px) {
+      width: 100%;
+      margin-top: 20px;
+      padding: 25px 20px 20px 20px;
+    }
+
+    .P-product-header {
+      display: flex;
+      justify-content: space-between;
+
+      .P-bars {
+        color: $purple;
+        font-size: 17px;
+        font-weight: 500;
+      }
+    }
+
+    .P-title {
+      font-size: $font-lg-size-3;
+      padding-top: 25px;
+      font-weight: 600;
+    }
+
+    .P-price {
+      padding-top: 25px;
+      font-size: $font-lg-size-2;
+      font-weight: 600;
+    }
+
+    .P-product-actions {
+      display: flex;
+      padding-top: 25px;
+      align-items: center;
+      min-height: 70px;
+
+      .P-add-to-basket {
+        margin-left: 44px;
+      }
+
+      @media only screen and (max-width: 800px) {
+        justify-content: space-around;
+        .P-add-to-basket {
+          max-width: 100px;
+        }
+
+      }
+
+      .P-counter {
+        width: 108px;
+        display: flex;
+        height: 36px;
+        border-radius: 30px;
+        border: solid 1px #D2D2D2;
+        background: $white;
+        justify-content: space-around;
+
+        .P-count {
+          display: flex;
+          align-items: center;
+          font-weight: bold;
+        }
+
+        .P-increase {
+          padding: 5px;
+          font-weight: bold;
+          cursor: pointer;
+          color: $ping;
+        }
+
+        .P-decrease {
+          padding: 5px;
+          font-weight: bold;
+          cursor: pointer;
+          color: $ping;
+        }
+      }
+
+      .P-to-basket {
+
+      }
+    }
+
+    .P-description {
+      width: 80%;
+      padding-top: 30px;
+
+      .P-desc-title {
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      .P-desc-shelf {
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+  }
+}

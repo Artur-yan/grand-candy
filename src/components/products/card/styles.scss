@@ -1,0 +1,227 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixins';
+
+.P-product-card {
+
+  .P-count-control {
+    transition: 0.5s;
+    margin-right: -74px;
+  }
+
+  .P-count-control-active {
+    margin-right: 0;
+  }
+
+  &.P-home-must_popular {
+    @media only screen and (max-width: 800px) {
+      flex-direction: column;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    flex-direction: column;
+  }
+
+  .P-card-image {
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    width: 100%;
+    padding: 50%;
+  }
+
+  .P-card-favorite-icon {
+    position: absolute;
+    right: 15px;
+  }
+
+  .P-card-item-lg {
+    margin-bottom: 20px;
+    @include grid(3, 60px);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 13px #00000029;
+
+    @media only screen and (max-width: 500px) {
+      width: 100%;
+      margin-right: 0!important;
+    }
+
+    @media only screen and (min-width: 500px) and (max-width: 1200px){
+      @include grid(2, 20px);
+    }
+
+    .P-card-info {
+      min-height: 70px;
+      width: 100%;
+
+      .P-card-title {
+        font-size: 22px;
+        font-weight: 700;
+        margin: 18px 0 18px 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        max-width: 300px;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .P-card-description {
+        font-size: 18px;
+        font-weight: 500;
+        color: $gray-2;
+        word-wrap: break-word;
+        margin: 15px 0 15px 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        max-width: 300px;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+
+  .P-card-item-md {
+    margin-bottom: 20px;
+    @include grid(4, 40px);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 13px #00000029;
+
+    @media only screen and (max-width: 800px) {
+      width: 100%;
+      margin-right: 0!important;
+    }
+
+    .P-card-info {
+      min-height: 70px;
+      width: 100%;
+
+      .P-card-title {
+        font-size: 22px;
+        font-weight: 700;
+        margin: 18px 0 18px 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        max-width: 300px;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .P-card-description {
+        font-size: 18px;
+        font-weight: 500;
+        word-wrap: break-word;
+        color: $gray-2;
+        margin: 15px 0 15px 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        max-width: 300px;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+
+  .P-card-item-search {
+    margin-bottom: 40px;
+    @include grid(6, 60px);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 13px #00000029;
+
+    .P-card-info {
+      min-height: 50px;
+      width: 100%;
+
+      .P-card-title {
+        font-size: 19px;
+        font-weight: 700;
+        margin: 18px 0 0 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        max-width: 300px;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .P-card-description {
+        font-size: 18px;
+        font-weight: 500;
+        word-wrap: break-word;
+        color: $gray-2;
+        margin: 15px 0 15px 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        max-width: 300px;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+
+  .P-card-item-sm {
+    margin-bottom: 40px;
+    @include grid(5, 40px);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 13px #00000029;
+
+    @media only screen and (min-width: 500px) and (max-width: 1030px){
+      @include grid(4, 20px);
+    }
+
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+    }
+
+    .P-card-info {
+      min-height: 70px;
+      width: 100%;
+
+      .P-card-title {
+        font-size: 19px;
+        font-weight: 700;
+        padding: 18px 0 0 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        max-width: 300px;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .P-card-description {
+        font-size: 18px;
+        font-weight: 500;
+        word-wrap: break-word;
+        color: $gray-2;
+        margin: 15px 0 15px 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        max-width: 300px;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+
+  .P-card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+

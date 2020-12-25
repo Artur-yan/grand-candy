@@ -1,0 +1,74 @@
+
+// #region Colors
+$black        : #000000;
+$ping         : #e2066d;
+$white        : #ffffff;
+$gray-5       : #555555;
+$gray-4       : #8F919D;
+$gray-3       : #676767;
+$gray-2       : #726C6C;
+$gray-1       : #777777;
+$gray-0       : #8F919D;
+$gray         : #A2A3AD;
+$light        : #F6F6F6;
+$light-2      : #E2E2E2;
+$light-1      : #C9C9C9;
+$light-3      : #c9c9c93d;
+$light-gray   : #f1f1f1;
+$light-gray-2 : #F2F1F6;
+$green        : #61CCA0;
+$light-green  : #5DD470;
+$red          : #FA3441;
+$blue         : #0055B8;
+$el-blue      : #4FDDD9;
+$light-red    : #dc444e;
+$yellow       : #F6AD22;
+$light-yellow : #fbc43a;
+$orange       : #F18A00;
+$purple       : #8B004F;
+$dark         : #232733;
+
+// #endregion
+
+// #region Alternative styles
+
+$gradient         : linear-gradient(to right, #03C4B5, $el-blue);
+$shadow           : 0px -3px 14px #00000012;
+$error-shadow     : 0 0 15px transparentize($red, 0.6);
+$blue-shadow      : 0 0 40px rgba($blue, .2);
+$blue-dark-shadow : 0 0 40px rgba($blue, .4);
+$radius           : 3px;
+$btn-radius       : 20px;
+$content-padding  : 10%;
+$laptop-size   : 1024px;
+$tab-size      : 768px;
+$phone-size    : 520px;
+$font-md-size  : 15px;
+$font-18-size  : 18px;
+$font-20-size  : 20px;
+$font-18-size  : 18px;
+$font-lg-size-1: calc(20px + .2vw);
+$font-lg-size-2: calc(20px + .2vw);
+$font-lg-size-3: calc(23px + .2vw);
+$font-md-2-size  : calc(20px + .2vw);
+
+// #endregion
+
+// #region App Components styles
+$body-color : $white;
+$main-color : $ping;
+
+$modal-z      : 1000;
+$right-side-z : $modal-z + 1;
+$products-menu-z : $modal-z + 1;
+$header-z     : 500;
+
+$left-side-width : 120px;
+$header-height   : 70px;
+$padding-vw      : 8vw;
+$header-padding  : 8%;
+$padding         : 60px;
+$big-padding     : 15%;
+$input-height    : 40px;
+$arrow-down-sm    : 9px;
+// #endregion

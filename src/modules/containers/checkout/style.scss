@@ -1,0 +1,425 @@
+@import '../../../assets/styles/variables';
+
+.P-checkout {
+
+  .P-steps-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 40px 0;
+    margin-left: -10vw;
+    width: calc(100% + 20vw);
+    background: $light-gray-2;
+
+    @media only screen and (max-width: 750px) {
+      width: 105%;
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+
+    .P-content {
+      width: 42%;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+
+      @media only screen and (max-width: 750px) {
+        width: 80%;
+      }
+
+      .P-steps-line {
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        z-index: 1;
+        background: $light-1;
+      }
+
+      .P-steps-line-cover {
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        height: 2px;
+        z-index: 1;
+        background: $ping;
+      }
+
+      .P-steps-text {
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .P-step-point {
+        z-index: 2;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+
+        border: solid 2px $light-1;
+        background: $white;
+
+        span {
+          color: $light-1;
+          font-size: 16px;
+          font-weight: bold;
+        }
+
+        .P-step-text {
+          position: absolute;
+          top: 45px;
+          font-weight: 500;
+          white-space: nowrap;
+        }
+      }
+    }
+
+    .P-step-detector-one {
+      .P-step-one {
+        border: solid 2px $ping;
+
+        span {
+          color: $ping
+        }
+      }
+    }
+
+    .P-step-detector-two {
+
+      .P-step-one {
+        border: solid 2px $ping;
+        background: $ping;
+        span {
+          color: $white
+        }
+      }
+
+      .P-step-two {
+        border: solid 2px $ping;
+
+        span {
+          color: $ping
+        }
+      }
+    }
+
+    .P-step-detector-three {
+
+      .P-step-one {
+        border: solid 2px $ping;
+        background: $ping;
+        span {
+          color: $white
+        }
+      }
+
+      .P-step-two {
+        border: solid 2px $ping;
+        background: $ping;
+        span {
+          color: $white
+        }
+      }
+
+      .P-step-three {
+        border: solid 2px $ping;
+
+        span {
+          color: $ping
+        }
+      }
+    }
+  }
+
+  .P-checkout-content {
+    padding-top: 30px;
+    width: 82%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto 25px auto;
+
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .P-delivery-content {
+      .P-map {
+        position: relative;
+        margin-left : 20px;
+        width: 56%;
+
+        @media only screen and (max-width: 750px) {
+          width: 100%;
+          min-height: 300px;
+          margin-left: 0;
+          margin-top: 20px;
+        }
+      }
+    }
+
+    .P-branch-content {
+      width: 45%;
+      overflow-y: scroll;
+      max-height: 366px;
+      padding: 20px 10px;
+      margin-left: -10px;
+      cursor: pointer;
+
+      @media only screen and (max-width: 750px) {
+        width: 100%;
+        max-height: 200px;
+      }
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+
+      .P-branch-item {
+        margin-bottom: 15px;
+        box-shadow: $shadow;
+        border-radius: 15px;
+        padding: 10px 7px;
+
+        .P-branch-address {
+          display: flex;
+
+          i {
+            color: $ping;
+            margin-right: 5px;
+            margin-top: 3px;
+          }
+          span {
+            font-size: calc(15px + .2vw);
+            color: $gray-1;
+
+            @media screen and (min-width: 1400px) {
+              font-size: 16px;
+            }
+          }
+        }
+
+        .P-branch-hours {
+          display: flex;
+          align-items: flex-start;
+          color: $gray-1;
+          i {
+            margin-top: 3px;
+            color: $ping;
+            margin-right: 5px;
+          }
+          span {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .P-branch-item-active {
+        border: 1px solid $ping;
+      }
+    }
+
+    .P-payment-content {
+      width: 50%;
+      padding: 20px 10px;
+      margin-left: -10px;
+      cursor: pointer;
+      margin-top: 40px;
+
+      @media only screen and (max-width: 750px) {
+        width: 100%;
+      }
+
+      .P-payment-item {
+        margin-bottom: 15px;
+        box-shadow: $shadow;
+        border-radius: 15px;
+        padding: 20px 17px;
+
+        .P-payment-info {
+          display: flex;
+
+          i {
+            font-weight: 500;
+            color: $black;
+            margin-right: 15px;
+            font-size: 30px;
+          }
+          .P-info-title {
+            font-size: 22px;
+            color: $black;
+          }
+          span {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    .P-delivery-description {
+      margin-left: 20px;
+      padding-top: 7px;
+    }
+
+    .P-blur-section {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      background: #fbfbfb91;
+    }
+
+    .P-pick-up {
+      margin-bottom: 30px;
+      //width: 50%;
+
+      @media only screen and (max-width: 750px) {
+        width: 100%;
+      }
+    }
+
+    .P-delivery {
+      width: 50%;
+
+      @media only screen and (max-width: 750px) {
+        width: 100%;
+      }
+    }
+
+    .P-checkout-basket {
+      width: 68%;
+      padding: 28px 39px 20px 36px;
+      border-radius: 6px;
+      box-shadow: $shadow;
+      background: $white;
+      min-height: 200px;
+
+      @media only screen and (max-width: 750px) {
+        width: 100%;
+        padding: 28px 15px 20px 15px;
+      }
+
+      .P-back {
+        .P-back-action span {
+          margin-left: 10px;
+        }
+      }
+
+      .P-back-action {
+        font-size: 16px;
+        color: $gray-1;
+      }
+    }
+
+    .P-checkout-price {
+      background: $light;
+      border-radius: 24px;
+      padding: 35px 20px 20px 20px;
+      width: 28%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      min-height: 366px;
+
+      @media only screen and (max-width: 750px) {
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      .P-summary {
+        font-size: 23px;
+        font-weight: bold;
+      }
+
+      .P-info-text {
+        font-size: 17px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .P-item {
+    padding-bottom: 35px;
+
+    @media only screen and (max-width: 750px) {
+      flex-direction: column;
+    }
+
+    .P-img {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border-radius: 15px;
+      width: 125px;
+      height: 125px;
+      min-width: 125px;
+    }
+
+    .P-item-info {
+      font-size: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding-left: 25px;
+    }
+
+    .P-title {
+      font-size: $font-20-size;
+      font-weight: 600;
+    }
+
+    .P-self-price {
+
+      .P-self-price-text {
+        font-size: 21px;
+        font-weight: 700;
+      }
+
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @media only screen and (max-width: 750px) {
+        margin-top: 20px;
+        width: 100%;
+      }
+    }
+
+    .P-item-counter {
+      display: flex;
+
+      .P-counter-btn {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        background: $light-gray;
+        user-select: none;
+      }
+
+      .P-count {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 7px 0 7px;
+      }
+    }
+  }
+}
+
+

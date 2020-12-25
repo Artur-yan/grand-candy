@@ -1,0 +1,26 @@
+@import '../../../assets/styles/variables';
+
+.P-search-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .P-logo-img {
+    height: 50px;
+    width: 120px;
+    margin-bottom: 20px;
+  }
+
+  .P-modal-close {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: $gray-2;
+    display: block;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+}

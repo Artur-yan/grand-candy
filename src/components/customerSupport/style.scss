@@ -1,0 +1,177 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixins';
+
+.P-customer-support {
+  position: fixed;
+
+  bottom: 7%;
+  right: 6%;
+
+  .P-chat-close {
+    position: absolute;
+    right: 10px;
+    top: -38px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    background-color: $light-1;
+    cursor: pointer;
+
+    .P-closebtn {
+      display: flex;
+    }
+  }
+
+  .P-send-arrow {
+    margin-left: -30px;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .P-support-chat {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    bottom: 0;
+    right: 0;
+    height: 62vh;
+    width: 24vw;
+    min-height: 582px;
+    min-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 14px 20px #00000012;
+    background: $white;
+
+    @media only screen and (max-width: 1500px) {
+      min-height: 434px;
+      min-width: 374px;
+    }
+    @media only screen and (max-width: 750px) {
+      bottom: 0;
+      right: -23px;
+      min-width: 350px;
+    }
+    .P-chat-discussions {
+      display: flex;
+      flex-direction: column-reverse;
+      height: calc(100% - 40px);
+      overflow: auto;
+
+      .P-chat-image-size {
+        display: flex;
+      }
+
+      .P-chat-images {
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 180px;
+        height: 130px;
+        border-radius: 5px;
+        margin: 0 10px 10px 10px ;
+        position: relative;
+
+        .P-additional-img {
+          color: white;
+          font-size: 35px;
+        }
+
+        .P-message-time {
+          position: absolute;
+          opacity: 0;
+          right: 0;
+          color: gray;
+          font-size: 15px;
+          top: -20px;
+        }
+
+        &:hover .P-message-time {
+          opacity: 1;
+        }
+      }
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      .P-message-item {
+        padding: 10px 10px 10px 10px ;
+        box-shadow: 0px 3px 10px #00000040;
+        border-radius: 5px;
+        width: -moz-fit-content;
+        width: fit-content;
+        max-width: 45%;
+        min-width: 6%;
+        position: relative;
+        cursor: pointer;
+        overflow-wrap: break-word;
+
+        .P-message-time {
+          position: absolute;
+          opacity: 0;
+          right: 0;
+          color: gray;
+          font-size: 15px;
+          top: -20px;
+        }
+
+        &:hover .P-message-time {
+          opacity: 1;
+        }
+      }
+
+      .P-receiver {
+        background-color: #F3F3F3;
+        margin-left: 10px;
+      }
+
+      .P-sender {
+        background: $ping;
+        color: $white;
+        margin-left: auto;
+        margin-right: 10px;
+
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .P-customer-support-btn {
+    border-radius: 50%;
+    height: 85px;
+    width: 85px;
+    min-width: 85px;
+    background: $ping;
+    cursor: pointer;
+  }
+
+  .P-support-actions {
+    margin-left: auto;
+    width: 100%;
+    display: flex;
+    margin-top: auto;
+
+    .P-support-input {
+      display: flex;
+      width: 85%;
+      margin-left: auto;
+    }
+
+    .P-support-files {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 14%;
+      font-size: 19px;
+      color: $ping;
+    }
+  }
+}

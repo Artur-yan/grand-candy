@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="79" height="92.193" viewBox="0 0 79 92.193">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="79" height="92.193" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect width="79" height="92" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="ic_orderbubles" clip-path="url(#clip-path)">
+    <g transform="translate(-10045 -7527)">
+      <g id="Repeat_Grid_20" data-name="Repeat Grid 20" transform="translate(10045 7527)" clip-path="url(#clip-path-2)">
+        <g transform="translate(-147 -292)">
+          <circle id="Ellipse_18" data-name="Ellipse 18" cx="2.5" cy="2.5" r="2.5" transform="translate(193 297)" fill="#fdc801"/>
+          <circle id="Ellipse_26" data-name="Ellipse 26" cx="1.5" cy="1.5" r="1.5" transform="translate(223 332)" fill="#2e84d9"/>
+          <circle id="Ellipse_27" data-name="Ellipse 27" cx="2.5" cy="2.5" r="2.5" transform="translate(160 292)" fill="#2e84d9"/>
+          <circle id="Ellipse_23" data-name="Ellipse 23" cx="2.5" cy="2.5" r="2.5" transform="translate(212 354)" fill="#f04972"/>
+          <circle id="Ellipse_19" data-name="Ellipse 19" cx="2" cy="2" r="2" transform="translate(147 335)" fill="#fdc801"/>
+          <circle id="Ellipse_21" data-name="Ellipse 21" cx="3" cy="3" r="3" transform="translate(151 360)" fill="#1ecb7b"/>
+          <circle id="Ellipse_20" data-name="Ellipse 20" cx="1.5" cy="1.5" r="1.5" transform="translate(178 306)" fill="#f04972"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

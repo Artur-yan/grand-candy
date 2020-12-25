@@ -1,0 +1,141 @@
+/* You can add HTML default tag styles */
+
+@import 'variables';
+
+@font-face {
+  font-family: 'Arial Bold';
+  src: url('../fonts/font/arial_amu_bold.otf');
+}
+
+@font-face {
+  font-family: 'Arial Regular';
+  src: url('../fonts/font/arial_amu_regular.otf');
+}
+
+@font-face {
+  font-family: 'Circle Bold';
+  src: url('../fonts/font/circe_bold.ttf');
+}
+
+@font-face {
+  font-family: 'Circle';
+  src: url('../fonts/font/circle.otf');
+}
+
+@font-face {
+  font-family: 'Para type book';
+  src: url('../fonts/font/para_type_futura_pt_book.otf');
+}
+
+@font-face {
+  font-family: 'Para type medium';
+  src: url('../fonts/font/para_type_futura_pt_medium.otf');
+}
+
+* {
+  margin         : 0;
+  padding        : 0;
+  box-sizing     : border-box;
+  outline        : 0;
+  font-family    :  'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  //scroll-behavior: smooth;
+}
+
+body {
+  font-size        : 16px;
+  color            : $black;
+  background-color : $body-color;
+  scroll-behavior: smooth;
+  padding: 0;
+  &.P-disabled {
+    overflow: hidden;
+  }
+
+  a {
+    color : $black;
+
+    &:hover {
+      color: $black;
+    }
+  }
+
+  &.hy {
+    * {
+      font-family: 'Arial Regular', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  }
+
+  &.en {
+    * {
+      font-family: 'Circle', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  }
+
+  &.ru {
+    * {
+      font-family: 'Para type book',  'Para type medium', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  }
+
+  main {
+    min-height: 100vh;
+  }
+}
+
+a {
+  text-decoration : none;
+  color           : aliceblue;
+}
+
+textarea, input, button, pre {
+  font-size   : 16px !important;
+  outline     : none !important;
+}
+
+pre {
+  white-space : pre-wrap;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  margin     : 0;
+  appearance : none;
+}
+
+input[type=file] {
+  display : none;
+}
+
+textarea { resize : none; }
+a, button, label { cursor : pointer; }
+
+button {
+  border           : 0;
+  background-color : transparent;
+}
+
+h1 { font-size : 40px; }
+h2 { font-size : 32px; }
+h3 { font-size : 28px; }
+h4 { font-size : 24px; }
+h5 { font-size : 22px; }
+h6 { font-size : 18px; }
+
+*::-webkit-scrollbar-track, *::-ms-autohiding-scrollbar {
+  border-radius    :  2px;
+  background-color :  $light;
+}
+
+*::-webkit-scrollbar {
+  width            : 4px;
+  height           : 8px;
+  background-color : $light;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius      : 4px;
+  background-color   : grey;
+}

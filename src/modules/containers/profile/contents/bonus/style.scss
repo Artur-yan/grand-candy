@@ -1,0 +1,210 @@
+@import '../../../../../assets/styles/variables';
+@import '../../../../../assets/styles/mixins';
+
+.P-bonus-section {
+  height: 100vh;
+  max-height: 400px;
+}
+
+.P-card-history {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media only screen and (max-width: 800px) {
+   flex-direction: column-reverse;
+  }
+
+  .P-bonus-list {
+    overflow-y: scroll;
+    max-height: 65vh;
+    width: 45%;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .P-card-list {
+    width: 45%;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .P-card-list, .P-bonus-list {
+      width: 100%;
+    }
+  }
+
+  .P-bonus-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 9px;
+    position: relative;
+
+    .P-bonus-card-info {
+      bottom: 0;
+      padding: 7px;
+      position: absolute;
+      width: 100%;
+      color: $white;
+
+      .P-card-number {
+        font-size: 21px;
+      }
+
+      .P-card-balance {
+        font-size: 24px;
+        font-weight: 700;
+      }
+    }
+
+    .P-modal-sun {
+      background-image: url('../../../../../assets/img/sun.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 200px;
+      width: 100%;
+      transform: scale(1.2);
+    }
+
+
+    .P-logo {
+      background: $white;
+      display: flex;
+      height: 6vw;
+      width: 6vw;
+      border-radius: 50%;
+      justify-content: center;
+
+      @media only screen and (max-width: 800px) {
+        height: 36vw;
+        width: 36vw;
+      }
+
+      .P-border-ping {
+        height: 95%;
+        width: 95%;
+        border-radius: 50%;
+        border: $main-color 2px solid
+      }
+
+      .P-border-blue {
+        height: 94%;
+        width: 94%;
+        border-radius: 50%;
+        border: $blue 2px solid;
+        padding: 10px;
+      }
+
+      .P-logo-img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .P-bonus-card-back {
+    display: flex;
+    flex-direction: column;
+    background-color: $light-3;
+    overflow: hidden;
+    height: 200px;
+    border-radius: 9px;
+    position: relative;
+    box-shadow: 0px -3px 14px #00000045;
+
+    .P-bonus-card-head {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 8px;
+
+      img {
+        width : 80px;
+      }
+    }
+
+    .P-bar-code {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      .P-bar-code-box {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 85%;
+        }
+      }
+    }
+
+    .P-candy-cover {
+      background-image: url('../../../../../assets/img/candyImgSun.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 15px;
+      width: 100%;
+    }
+
+    .P-bonus-card-info {
+      bottom: 0;
+      padding: 7px;
+      position: absolute;
+      width: 100%;
+      color: $white;
+
+      .P-card-number {
+        font-size: 21px;
+      }
+
+      .P-card-balance {
+        font-size: 24px;
+        font-weight: 700;
+      }
+    }
+
+    .P-modal-sun {
+      background-color: $light-3;
+      height: 200px;
+      width: 100%;
+      transform: scale(1.2);
+    }
+  }
+
+  .P-bonus-info-card {
+    box-shadow:  0 3px 16px #0000001C;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+  }
+
+  .P-order {
+    color: $black;
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+
+  .P-order-date {
+    font-size: 14px;
+    color: #9B9B9B;
+  }
+
+  .P-order-count {
+    color: $ping;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+
